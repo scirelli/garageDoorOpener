@@ -5,10 +5,13 @@ PIN=0
 ERROR_MSG_1='Done.'
 ERROR_MSG_2='Already in progress.'
 TWO_MINS=$((60*2))
+DELAY=0.3
 
 fileName='pid'
 filePath='/tmp/garageDoor/'
 file="$filePath$fileName"
+
+gpio mode $PIN output
 
 printOutput(){
     output="{\"success\":$3, \"exitCode\":\"$1\", \"msg\":\"$2\"}"
@@ -59,7 +62,7 @@ then
     then
         rm $file
         turnOn
-        sleep 0.3
+        sleep $DELAY
         turnOff
         printOutput $ecode $ERROR_MSG_1 true
     else
@@ -68,7 +71,7 @@ then
     fi
 else
     turnOn
-    sleep 0.3
+    sleep $DELAY
     turnOff
     printOutput $ecode $ERROR_MSG_1 true
 fi
