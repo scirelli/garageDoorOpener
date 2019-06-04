@@ -2,6 +2,7 @@
 Simple program to turn a pin on or off.
 
 ### Pi Zero W Pinout
+```
  +-----+-----+---------+------+---+-Pi ZeroW-+---+------+---------+-----+-----+
  | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
  +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
@@ -28,7 +29,7 @@ Simple program to turn a pin on or off.
  +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
  | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
  +-----+-----+---------+------+---+-Pi ZeroW-+---+------+---------+-----+-----+
-
+```
 ### References
 [WiringPi](http://wiringpi.com/the-gpio-utility/)  
 [WiringPi source](https://github.com/WiringPi/WiringPi/blob/master/wiringPi/wiringPi.c)  
