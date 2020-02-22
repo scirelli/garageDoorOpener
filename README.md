@@ -36,3 +36,4 @@ Simple program to turn a pin on or off.
 [geteuid](https://linux.die.net/man/2/geteuid)  
 [Nginx Setenv](http://stackoverflow.com/questions/8098927/nginx-variables-similar-to-setenv-in-apache)  
 [Evironment Access](https://www.gnu.org/software/libc/manual/html_node/Environment-Access.html#Environment-Access)
+[fcgiwrap](https://www.nginx.com/resources/wiki/start/topics/examples/fcgiwrap/)
